@@ -1,0 +1,516 @@
+######################      23 Feb 2022    ######################
+
+indentntation is must in python programming 
+
+Example
+    In C program
+     int a-10, b-10;
+     if(a>b)
+     {
+         printf("a is greatest);
+     }
+     else
+     {
+         printf("b is greatest");
+     }
+
+
+    In python program
+    a=5
+    b=20 
+    if(a>b):
+        print("a is greateest")
+        print("hello")
+    else:
+        printf("b is greatest");
+    
+    a=10
+    print(a)
+    if(100<10):
+        jkhslkfsd
+        kjhksd
+    b=10
+    print(b)
+
+output
+10 20
+
+
+
+
+
+######################      12 March 2022   ######################
+
+Module
+    import sys # importis is the keyword to use the built-in methos in the respective Module
+    sys.exit()
+
+
+
+
+
+######################      4th April 2022     ###################### 
+
+Arrays: Collection of elements
+    in python, it can store any datatype 
+    a = [10, 20, 'a', "abc"]
+
+Array in python are:
+    list
+    tuple
+    dictionary 
+    storestring
+    [each differs in either order or difffers in redundant values or unique values. ]
+
+Working with list array:
+    names = [ "abc", "an", "ssh" ]  # list creation uses square brackets
+    a = [ 10,20,30 ]                # list cereation
+
+
+
+
+
+######################      5th April 2022      ######################
+uses of range:
+    it is used in for each list 
+
+
+
+
+######################      6th April 2022      ######################
+user input
+
+functions
+
+
+
+
+######################      11th April 2022     ######################
+
+List:
+    List allows duplicate values
+    unordered
+    a=[]
+    a=[1,2,3]
+    a=[1,1,2]
+
+Tuple:
+    ordered, not mutable and it allows duplicates
+    elements are written betwen ( -- ), parenthrsis 
+    used to assign multiple values to same variable
+
+    a = 10              # assigning values 10 to variable 'a'
+    a = (10, 20, 30)    # assigning values 12,20,30 to variable 'a'
+    a = ()              # empty Tuple
+    a = (10,)           # tuple with one element 
+
+
+
+
+
+            ##  22nd April 2022
+
+Class and Objects:
+
+Object oriented:
+    Eg: Java
+    classes and Object
+    classes will have members functions
+    package will have classes, subclasses subpackages methoda etc eg java.io java.util
+
+Procedure oriented :
+    Eg: C 
+    Functions 
+    libraries will have builtin functions
+
+
+Class in python
+
+class FirstClass:       #defining class
+    a=10                #member data/assigning member variable
+    b=20
+
+ob1 = FirstClass()                  #creating object of class
+#print(a)                           #error because  is not defined         
+print(ob1.a, ob1.b)                 # accessing member data of the class using operator
+
+Class is a user defined datatype
+or 
+Class is a template where we group/encaptulate the relavent member data and member function
+
+Object are variables of type class 
+
+
+
+
+
+######################      25th April 2022      ######################
+# sort the first using second list
+
+# File Handling:
+    f1 = open("username.txt", "r")      # opens the existing file named "username.txt" and it is opened for read mode
+    print(f1.read())
+    f2 = open("C:\\Users\\NITRO 5\\Desktop\\DAA Assignment.txt", "r")
+    print(f2.read())
+
+
+
+
+
+######################      29th April 2022      ######################
+# Regular expression:
+            these are using to maake searching easier by writting pattern 
+
+#pattern are written using some standard symbols
+
+
+(), searches if the search key is present in this group
+., matches any letters
+|, searches for either of the pattern written having symbol | in between
+{2}, searches whether the input has exactaly the specified number of occurance
+?, zero or one occurance
++, one or more occurance 
+*, zero or more occurance
+$, checks whether the input ends with the letter or word specified prefixded with the symbol $
+^, checks whether the input starts with the letter or word suffixed with the symbol ^
+[a-z], checks whether the onput has anything in the given range 
+
+
+
+
+
+######################      30th April 2022  (Revision Class)    ######################
+# Module 1
+    # interpreted, each line is executed as a program
+    # python is dynamic language, that mean we do not declare datatype like int, float etc
+    
+print("hello wirld")            # print function style 1
+
+# datatypes supported in python
+a=10                            # this line creates a integer variable because values decides the type of variable 
+b=2.3
+c='\0'                          # in python, both single quote and double quote are type string and not character
+d=True
+print(type(a))                  # type() function tells us the datatype of the variable passed as the arguments
+print(type(b))
+print(type(c))
+print(type(d))
+list1 = [10,20,30]
+print(type(list1))
+tup1 = (1,2,3,'a')
+print(type(tup1))
+dict1 = {0:11, 1:22, 2:'a'}
+print(type(dict1)))
+
+# in python indentation is mandatory  to follow
+
+if(20>10):
+    print("True")
+    c=10+10
+print("outside the if")
+
+# types of comments in python
+    # comments aer the line which are not executed by the compiler. It is used to explain the coding lines
+    # '#' single line comments 
+    '''
+    whenever lines are written in between the set of two triple quotes 
+    and howmany ever line, are all commented
+    '''
+
+# type casting, means converting one type of variable to another type. This can be done by using buoltin functions like 
+# str(), int(), float()
+
+x = 10
+res1 = str(x)                       # str() is a builtin function used to convert any other datatype value to string as "10". here res1 is of string
+res2 = int(res1)                    # res2 is of type int
+res3 = float(res2)                  # res3 is of type float
+
+# variables acan nnot ave spaces, means a b is not a valid variable but a,b  can be two different variables
+# variables can not be keywords
+# variable are case sensitive, means a and A are different variables 
+# variables can start with letter or _ but not start with digits
+# when variables has multiple words, use camel case, pascal case, or snake case. these are valid 
+        getData(), camel case 
+        MyPythonClass(), pascal case 
+        My_Python_Class() , snake case 
+
+a, b, c = 10, 20, 30                    # this is the way to assign values to multiple variables in the same line
+print("{} {} {} ".format(a,b,c))        # this is the way to display multiple outputs in the same print() function
+print(a, b, c)                          # print function style 2  
+i = j = k = "hello"                     # this is the way to assign same value to multiple variables
+print("{} {} {} ".format(i, j, k))      # print function style 3
+
+
+#control statements, functions, lambda function and types of arrays 
+
+a = 10          # assignment statement uses single equal operator '='. it sets the RHS value to LHS
+b = 21
+
+# python if-else syntax or conditional statements or branching statements 
+# if, if-else, nested-if, else-if ladder, switch
+if (a==b):                              # relational operator takes double equals operator '=='. it checks whether both the side has the same value. 
+    print("a has value same as b")
+else:
+    print("a's value is differenet from b")
+print("other code")
+
+
+# control statements or iteration statements or looping statements 
+for i in range(2, 8, 2):                 # range() function decides how many times loop should repeat
+    print(i)
+
+k=5
+while(k>0):
+    print("displayed")
+    k = k-2
+
+list1 = [10,20,30]
+for i in list1:
+    print(i)
+
+tup1 = (1,2,3,'a')
+for p in tup1:
+    print(p)
+
+dict1 = {0:11, "xyz":22, 2:'a'}
+for p in dict1.items:
+    print(p)
+
+
+# functions in python
+
+def nameFunc():                        # function fefination 
+    return "This is in Function. "
+
+def func2(a,b):
+    print(a+b)
+
+c = nameFunc()                         # function call
+print(c)
+
+func2(10, 2)
+
+# lambda function, anonymous function 
+
+res = lambda x, y: (x>y) 
+print(res(20, 100))
+
+# use of lambda function in the user defined function 
+def func3(n):                           # function defination
+    return lambda a: (a>n)              # use of lambda function inside the user defined function
+
+res = func3(20)                         # function call to func3() that takes value for 'n' 
+print(res(10))                          # function call to res() lambda function that takes value for 'a' 
+
+
+
+
+
+######################      1st May 2022 (Revision class)    ######################
+
+# Classes and Objects
+        #Queue.py(revision)
+
+# File Handling
+        #FileHandling.py(regular)
+    # open a file, create a file, read a file, copy to another file, write to a file, close a file,
+    # positioning the file position, search for a content in the fiile
+
+fp = open("revision.txt", "w")      # if file already exists, it overrites, if file does not exist , it creates and write to the File
+fp.write("I am writing to revision file ")
+
+# Strings
+    # string are collection of characters
+    # string can be written either with single quote ' ' or between double quote " "
+
+name = "sudan"      # creating a string named 'name'
+print(name)         # displaying the string 
+
+name = input("Enter your name ")        # assume that input is "mysore"
+print(name)
+print(name[0])      # displays first ltter 
+print(name[1:3])    # displays from '1' position to '3' position excluding '3'th position   
+print(name[:3])     # displays from 0th position to '3'th position 
+print(name[-1])     #displays the last letter 
+priint (name*3)      displays the inpur'3' times
+print(len(name))    # len() function displays the number of character in the string 
+
+k=1 
+for i in name:
+    if(i in ('a', 'e', 'i', 'o', 'u')):
+        print("vowel in position {} and the letter is {} ".format(k,i))
+
+k=1 
+for i in name:
+    if(i not in ('a', 'e', 'i', 'o', 'u')):
+        print("consonent in position {} and the letter is {} ".format(k,i))
+
+print(name.upper())
+print(name.replace('o', 'co')
+
+# Iterator and Comprehensions
+    # IterationAndComprehension.py ( revision )
+
+
+
+
+
+######################      4th May 2022     ######################
+# Module in Python :
+            Sudan.py
+            UserModule.py
+            ModulesInPython.py
+
+
+
+
+                ### 5th May 2022
+                    ExceptionHandling.py
+
+# Excetion Handling:
+        Exception is a un time error, means program will not have any system error, but we will encounter the bugs during execution time.
+
+# Types of error:
+    # run time or executuion error,     eg: ArrayIndexOutOfBound
+    # syntax error,                     eg: indentation, quotes missing, braces missing, undeclared variables
+    # semantic or logical error,        eg: incomplete logic that gives partial output 
+
+# Exception Handling uses keywords like, try, except, else, finally
+
+# try block includes codes which may results in exception 
+# except block includes codes to handle the exception thrown in try block 
+# else block can include codes that executed if there is no exception in try block 
+# finally block, cleaning objects, deallocation, mandatory codes to executes are kept in finally block 
+
+# Advantages of writing programs using exception handling block 
+# 1. We cangive user-friendly error messages
+#    
+
+
+
+
+######################      6th May 2022     ######################
+                        OS_Module.py
+
+# It is one of the builtin library in python , sys, platform, os
+# Application Program Interface (API), these are builtin functions which comes from different modules
+
+
+
+
+
+
+######################      9th May 2022     ######################
+                        Stack.py
+                        
+
+
+
+######################      10th May 2022   ######################
+                        SysModule.py
+
+# sys.argv      argv is a command vector which stores command line inputs 
+# sys.exit works like break in a loop
+
+print(sys.maxsize)          # this gives us the maximum number allowed in the python version
+print(sys.path )            # this prints all the path in the python directory 
+print(sys.version )         # details about python version and os architecture 
+
+# stdin, stdout, stderr
+
+for i in sys.stdin:           # sys.stdin takes input form keyboard
+# for i in input("Enter a character: "):        # same as above
+    if i.rstrip() == 'q':     # rstrip() function is used to remove spaces in input towards right side
+        sys.exit(0)
+    else:
+        sys.stdout.write(i)     # sys.stdout works like print 
+        # print(i)              # same as above
+
+
+
+
+
+######################      12th May 2022   ######################
+            Done from PDF
+
+
+
+######################      12th May 2022   ######################
+                        TimeConversion.py
+                        TowerOfHanoi.py
+
+Convert the time from 12 Hr format to 24 Hr format.
+
+Tower of Hanoi Problem
+
+
+
+######################      18th May 2022   ######################
+                Done from PDF 
+
+
+
+
+######################      19th May 2022   ######################
+                Done from PDF 
+Socket Programing:
+            the primary socket API functions and methods in this module are:
+                socket()
+                bind()
+                listen()
+                accept()
+                connect()
+                send()
+                recv()
+                close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

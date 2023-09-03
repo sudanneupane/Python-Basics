@@ -1,0 +1,18 @@
+import random 
+
+def chara(x):
+	a = random.randint(97,122)
+	if x == 0:
+		retutn chr(a)
+	elif x == 1:
+		return chr(a).upper()
+
+
+def numeric()
+	num = random.randint(0,9)
+	return f"{num}"
+
+def spechr()
+	lst = [!, @, #, $, %, ^, &, *]
+	spc = random.randint(0,6)
+	
